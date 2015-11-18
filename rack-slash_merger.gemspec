@@ -5,7 +5,7 @@ Gem::Specification.new do |s|
   s.version = Rack::SlashMerger::VERSION
   s.summary = 'Rack-based slash merger'
   s.description = 'Rack-based compression of two or more adjacent slashes in a URI into a single slash.'
-  s.files = `git ls-files`.split('\n')
+  s.files = `git ls-files`.split($/)
   s.require_path = 'lib'
   s.author = 'Adrian Lehmann'
   s.email = 'ownadi@gmail.com'
