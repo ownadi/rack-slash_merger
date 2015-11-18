@@ -1,4 +1,4 @@
-# rack-slash_merger [![Build Status](https://travis-ci.org/ownadi/rack-slash_merger.svg?branch=master)](https://travis-ci.org/ownadi/rack-slash_merger)
+# rack-slash_merger [![Build Status](https://travis-ci.org/ownadi/rack-slash_merger.svg?branch=master)](https://travis-ci.org/ownadi/rack-slash_merger) [![Gem Version](https://badge.fury.io/rb/rack-slash_merger@2x.png)](https://badge.fury.io/rb/rack-slash_merger)
 
 A rack middleware for compressing of two or more adjacent slashes in a URI into a single slash.
 
