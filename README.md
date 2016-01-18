@@ -16,7 +16,7 @@ Then restart your Rails server. No configuration is needed. The gem simply hooks
 
 ### Other rack-based application
 
-In your Gemfile you add the gem:
+In your Gemfile add the gem
 
 ```ruby
 gem 'rack-slash_merger'
@@ -26,7 +26,7 @@ Add middleware to stack:
 
 ```ruby
 # config.ru
-include 'rack/slash_merger'
+require 'rack/slash_merger'
 use Rack::SlashMerger
 ```
 
