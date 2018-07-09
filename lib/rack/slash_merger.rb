@@ -8,8 +8,8 @@ module Rack
 
     def call(env)
       if env['PATH_INFO'] =~ PATTERN
-        env['PATH_INFO'].gsub!(PATTERN, '/')
-        [301, {"Location" => Rack::Request.new(env).url, "Content-Type" => ""}, []]
+        new_env = env.merge('PATH_INFO' => env['PATH_INFO'].gsub(PATTERN, '/'))
+        [301, {"Location" => Rack::Request.new(new_env).url, "Content-Type" => ""}, []]
       else
         @app.call(env)
       end
