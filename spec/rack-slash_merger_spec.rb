@@ -17,3 +17,13 @@ describe Rack::SlashMerger do
     it { expect(response.status).to eql(200) }
   end
 end
+
+if ENV['TEST_RAILTIES_VERSION']
+  require 'combustion'
+
+  Combustion.initialize!
+
+  describe Rack::SlashMerger::Railtie do
+    it { expect(Rails.configuration.middleware.map(&:name)).to include("Rack::SlashMerger") }
+  end
+end
