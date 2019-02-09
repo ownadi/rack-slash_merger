@@ -1,7 +1,10 @@
 language: ruby
 rvm:
-  - "2.5.1"
+  - 2.5
+  - 2.6
   - "jruby-head"
 env:
-  - TEST_RAILTIES_VERSION='~> 4.2.0'
-  - TEST_RAILTIES_VERSION='~> 5.2.0'
+  - TEST_RAILTIES_VERSION='~> 4.2'
+  - TEST_RAILTIES_VERSION='~> 5.0'
+  - TEST_RAILTIES_VERSION='~> 5.1'
+  - TEST_RAILTIES_VERSION='~> 5.2'
